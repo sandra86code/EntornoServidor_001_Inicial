@@ -17,14 +17,14 @@
 		</style>
 	</head>
 <body>
-	<p><% int alto = Integer.parseInt(request.getParameter("alto"));
-	int diferencia = 0;
-	for(int i=0; i<alto; i++) { %>
+	<p><% int height = Integer.parseInt(request.getParameter("piramidHeight"));
+	int difference = 0;
+	for(int i=0; i<height; i++) { %>
 		<p> <%
-		for(int j=0; j<=i+diferencia; j++) { %>
-			<img src="bola.jpg" /> <%;
+		for(int j=0; j<=i+difference; j++) { %>
+			<img src="bola.jpg" /> <%
 		} 
-		diferencia ++;%>
+		difference++;%>
 		</p><%
 	} %>
 	
